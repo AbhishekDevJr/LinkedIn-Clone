@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  margin : 0;
+  padding : 0;
+}
+
+.search-input{
+  display : flex;
+  flex-direction : row;
+  justify-content : center;
+  align-items : center;
+  background-color : #EEF3F8;
+  color : gray;
+  height : 35px;
+  padding-left : 15px;
+  border-radius : 5px;
+}
+
+.header-left{
+  display : flex;
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items : center;
+  width : 300px;
+}
+
+.search-input input {
+  outline : none;
+  border : none;
+  background-color : #EEF3F8;
+  font-size : 16px;
+}
