@@ -16,6 +16,14 @@
   border-radius : 5px;
 }
 
+header{
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  align-items : center;
+  padding : 0px 180px 0px 180px;
+}
+
 .header-left{
   display : flex;
   flex-direction : row;
@@ -24,9 +32,48 @@
   width : 300px;
 }
 
+.header-right {
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  align-items : center;
+  color : gray;
+  width : 500px;
+  padding-top : 5px;
+}
+
 .search-input input {
   outline : none;
   border : none;
   background-color : #EEF3F8;
   font-size : 16px;
+}
+
+.options-icons {
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+  cursor : pointer;
+  font-size : 12px;
+}
+
+.options-icons:hover {
+  color : black;
+}
+
+.profile-avatar{
+  font-size : 12px;
+}
+
+.profile-avatar img {
+  object-fit: contain;
+  height : 20px !important;
+  width : 20px !important;
+  border-radius : 100px;
+}
+
+.profile-avatar:hover {
+  color : black;
+  cursor : pointer;
 }
