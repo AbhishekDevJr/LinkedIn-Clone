@@ -10,16 +10,17 @@ function SideBar(){
                         <a href = "#"><p>ABHISHEK CHOUDHARI</p></a>
                         <p id = "profile-info">Pursuing MCA from IGNOU || Building Front-end Web Apps || Ex-Programmer Analyst (EAS-Salesforce) at Cognizant || Completed internship at Essar Steel Ind Ltd.</p>
                 </div>
-
+                <div className = "stats-hover">
                 <div className = "stats-connections">
                     <p id = "stat-view">Connections</p>
                     <p id = "stat-count">110</p>
                 </div>
-                <p>Grow your network</p>
+                <p id = "stats-info">Grow your network</p>
+                </div>
                 
                 <div className = "stats-profile-visits">
                     <p>Who's viewed your profile</p>
-                    <p>15</p>
+                    <p id = "stats-view">15</p>
                 </div>
 
                 <div className = "sidebar-top-tools">
