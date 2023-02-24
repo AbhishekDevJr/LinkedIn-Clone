@@ -17,6 +17,8 @@
 }
 
 header{
+  position : sticky;
+  top : 0px;
   display : flex;
   flex-direction : row;
   justify-content : space-between;
@@ -76,4 +78,41 @@ header{
 .profile-avatar:hover {
   color : black;
   cursor : pointer;
+}
+
+.main-section{
+  padding : 0px 180px 0px 180px;
+  margin-top : 30px;
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  align-items : center
+}
+
+.main-child1{
+  flex : 0.2;
+}
+
+.main-child2{
+  flex : 0.6;
+}
+
+.main-child3{
+  flex : 0.2;
+}
+
+.sidbar {
+  outline : 1px solid red;
+}
+
+img[alt = "Cover Image"]{
+  width : 220px;
+  height : 50px;
+}
+
+#SidebarProfileImage{
+  width : auto;
+  height : 60px;
+  border-radius : 100%;
+  outline : 2px solid white;
 }
