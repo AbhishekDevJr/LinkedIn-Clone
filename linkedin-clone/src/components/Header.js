@@ -26,7 +26,7 @@ function Header(){
                     <HeaderOptions icon = {MessageIcon} title = {'Messaging'} />
                     <HeaderOptions icon = {NotificationsIcon} title = {'Notifications'} />
                     <div className = "profile-avatar">
-                        <img src = "B0A74F60-BDD0-4C44-8D06-A3CC680DD264 (1).JPEG" alt = "Profile Picture" />
+                        <img src = "SidebarProfileImage.JPEG" alt = "Profile Picture" />
                         <p>Me</p>
                     </div>
                 </div>

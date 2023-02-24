@@ -7,12 +7,13 @@ function SideBar(){
                 <img src = "CoverImage.png" alt = "Cover Image" />
                 <div className = "profile-avatar-sidebar">
                         <img id = "SidebarProfileImage" src = "SidebarProfileImage.JPEG" alt = "Profile Picture SideBar" />
-                        <p>Abhishek Choudhari</p>
+                        <a href = "#"><p>ABHISHEK CHOUDHARI</p></a>
+                        <p id = "profile-info">Pursuing MCA from IGNOU || Building Front-end Web Apps || Ex-Programmer Analyst (EAS-Salesforce) at Cognizant || Completed internship at Essar Steel Ind Ltd.</p>
                 </div>
 
                 <div className = "stats-connections">
-                    <p>Connections</p>
-                    <p>110</p>
+                    <p id = "stat-view">Connections</p>
+                    <p id = "stat-count">110</p>
                 </div>
                 <p>Grow your network</p>
                 

@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+  --sidebarPadding : 0px 8px 0px 8px;
+}
+
 *{
   box-sizing: border-box;
   margin : 0;
   padding : 0;
+  font-family : 'Noto Sans', sans-serif;
 }
 
 .search-input{
@@ -103,10 +110,11 @@ header{
 
 .sidbar {
   outline : 1px solid red;
+  width : 20%;
 }
 
 img[alt = "Cover Image"]{
-  width : 220px;
+  width : 100%;
   height : 50px;
 }
 
@@ -115,4 +123,57 @@ img[alt = "Cover Image"]{
   height : 60px;
   border-radius : 100%;
   outline : 2px solid white;
+}
+
+.profile-avatar-sidebar {
+  padding : var(--sidebarPadding);
+  margin-top : -35px;
+  display : flex;
+  flex-direction : column;
+  justify-content : space-between;
+  align-items : center;
+  
+}
+
+.profile-avatar-sidebar p{
+  margin-top : 20px;
+}
+
+.profile-avatar-sidebar a{
+  font-size : 16px;
+  text-decoration : none;
+  color : black
+}
+
+.profile-avatar-sidebar a:hover {
+  text-decoration : underline;
+  text-decoration-color : rgb(131,68,204);
+}
+
+
+#profile-info{
+  margin-top : 5px;
+  font-size : 12px;
+  color : rgb(164,164,164);
+  text-align : center;
+}
+
+.stats-connections {
+  margin-top : 20px;
+  border-top : 1px solid #EBEBEB;
+  padding : 8px 8px 8px 8px;
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  align-items : center;
+}
+
+#stat-view {
+  font-size : 12px;
+  color : rgb(130,130,130);
+}
+
+#stat-count {
+  color : rgb(62,134,207);
+  font-size : 13px;
 }
