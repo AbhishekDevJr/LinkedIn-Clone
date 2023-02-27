@@ -266,6 +266,8 @@ img[alt = "Cover Image"]{
   flex-direction : row;
   justify-content : flex-start;
   align-items : center;
+  border-bottom-left-radius : 9px;
+  border-bottom-right-radius : 9px;
   padding : 12px 8px 12px 8px;
   font-size : 12px;
   color : rgb(67,67,67);
@@ -280,4 +282,53 @@ img[alt = "Cover Image"]{
   width : auto;
   height : 18px;
   margin-right : 5px;
+}
+
+.sidebar-bottom {
+  margin-top : 8px;
+  background-color : white;
+  border : 1px solid #d4d4d4;
+  border-radius : 10px;
+}
+
+.sidebar-bottom-1{
+  padding : 20px 8px 10px 8px;
+}
+
+.sidebar-bottom-1 p{
+  font-size : 12px;
+  color : rgb(25,25,25);
+}
+
+.hashtag-row1, .hashtag-row2, .hashtag-row3, .hashtag-row4, .hashtag-row5 {
+  display : flex;
+  flex-direction : row;
+  justify-content : flex-start;
+  align-items : center;
+  color : rgb(102,102,102);
+  padding : 0px 8px 0px 8px;
+}
+
+.hashtag-row1:hover, .hashtag-row2:hover, .hashtag-row3:hover, .hashtag-row4:hover, .hashtag-row5:hover{
+  background-color : rgb(224, 223, 221);
+  cursor : pointer;
+}
+
+#hashC {
+  font-weight : 600;
+}
+
+#hashP {
+  font-size : 12px;
+  margin-left : 10px;
+}
+
+.sidebar-bottom-links{
+  padding : 0px 8px 0px 8px;
+  font-size : 12px;
+}
+
+.sidebar-bottom-links a{
+  color : rgb(0, 128, 255);
+  text-decoration : none;
 }

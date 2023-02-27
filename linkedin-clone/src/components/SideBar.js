@@ -1,6 +1,18 @@
 import React from 'react';
 
 function SideBar(){
+
+
+    function hashTagRowBuilder(hashtagName){
+        return(
+            <>
+                <p id = "hashC">&#35;</p>
+                <p id = "hashP">{hashtagName}</p>
+            </>
+        );
+    }
+
+
     return(
         <div className = "sidbar">
             <div className = "sidebar-top">
@@ -38,7 +50,57 @@ function SideBar(){
             </div>
 
             <div className = "sidebar-bottom">
+                <div className = "sidebar-bottom-1">
+                    <p>Recent</p>
+                </div>
 
+                <div className = "hashtags-container">
+                    <div className = "hashtag-row1">
+                        {hashTagRowBuilder("india")}
+                    </div>
+
+                    <div className = "hashtag-row2">
+                        {hashTagRowBuilder("WebDevelopment")}
+                    </div>
+
+                    <div className = "hashtag-row3">
+                        {hashTagRowBuilder("FrontEndDevelopment")}
+                    </div>
+
+                    <div className = "hashtag-row4">
+                        {hashTagRowBuilder("ReactDevelopment")}
+                    </div>
+
+                    <div className = "hashtag-row5">
+                        {hashTagRowBuilder("StateManagement")}
+                    </div>
+                </div>
+
+                <div className = "sidebar-bottom-links">
+                    <div className = "link1">
+                        <a href = "#">Groups</a>
+                    </div>
+
+                    <div className = "link2">
+                        <a href = "#">Events</a>
+                    </div>
+
+                    <div className = "link3">
+                        <a href = "#">Followed Hashtags</a>
+                    </div>
+                </div>
+
+                <div className = "hashtag-row6">
+                        {hashTagRowBuilder("india")}
+                </div>
+
+                <div className = "hashtag-row7">
+                    <p>See all</p>
+                </div>
+
+                <div className = "more">
+                    <p>Discover More</p>
+                </div>
             </div>
         </div>
     );
