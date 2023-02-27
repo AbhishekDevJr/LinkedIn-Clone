@@ -29,9 +29,16 @@ function Feed(){
 
                     <div className = "row2-item4">
                         <img src = "icons8-news-48.png" alt = "Write Icon" />
-                        <p>Write Icon</p>
+                        <p>Write article</p>
                     </div>
                 </div>
+            </div>
+
+            <div className = "feed-divider">
+                <button id = "btn">
+                    <div className = "divider-line"></div>
+                    <p>Sort by: <strong>Top +</strong></p>
+                </button>
             </div>
         </div>
     );

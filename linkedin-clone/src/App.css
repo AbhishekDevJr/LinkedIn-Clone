@@ -417,6 +417,15 @@ img[alt = "Cover Image"]{
   flex-direction : row;
   justify-content : space-between;
   align-items : center;
+  padding : 0px 20px 0px 20px;
+  color : rgb(112, 112, 112);
+  font-size : 14px;
+}
+
+.top-row2 img {
+  margin-right : 8px;
+  width : auto;
+  height : 30px;
 }
 
 .row2-item1, .row2-item2, .row2-item3, .row2-item4{
@@ -424,4 +433,32 @@ img[alt = "Cover Image"]{
   flex-direction : row;
   justify-content : space-between;
   align-items : center;
+  padding : 10px 5px 10px 5px;
+  border-radius : 5px;
+}
+
+.row2-item1:hover, .row2-item2:hover, .row2-item3:hover, .row2-item4:hover{
+  cursor : pointer;
+  background-color : rgb(226, 226, 226);
+}
+
+#btn{
+  margin : 5px 0 5px 0;
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  align-items : center;
+  border : none;
+  cursor : pointer;
+}
+
+.divider-line{
+  border : 1px solid rgb(191,190,187);
+  width : 510px;
+  margin-right : 5px;
+}
+
+#btn p{
+  font-size : 12px;
+  color : rgb(75, 75, 75);
 }
