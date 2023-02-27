@@ -13,6 +13,7 @@
 
 body{
   background-color : rgb(243,242,239);
+  height : 200vh;
 }
 
 .search-input{
@@ -28,13 +29,18 @@ body{
 }
 
 header{
-  position : sticky;
-  top : 0px;
   display : flex;
   flex-direction : row;
   justify-content : space-between;
   align-items : center;
-  padding : 0px 180px 0px 180px;
+  padding : 0px 180px 3px 180px;
+}
+
+.headerClass{
+  position : sticky;
+  top : 0px;
+  z-index : 100;
+  background-color : white;
 }
 
 .header-left{
@@ -289,6 +295,9 @@ img[alt = "Cover Image"]{
   background-color : white;
   border : 1px solid #d4d4d4;
   border-radius : 10px;
+  position: sticky !important;
+  top: 20px;
+  z-index: 200;
 }
 
 .sidebar-bottom-1{
@@ -300,7 +309,7 @@ img[alt = "Cover Image"]{
   color : rgb(25,25,25);
 }
 
-.hashtag-row1, .hashtag-row2, .hashtag-row3, .hashtag-row4, .hashtag-row5 {
+.hashtag-row1, .hashtag-row2, .hashtag-row3, .hashtag-row4, .hashtag-row5, .hashtag-row6, .hashtag-row7 {
   display : flex;
   flex-direction : row;
   justify-content : flex-start;
@@ -309,9 +318,20 @@ img[alt = "Cover Image"]{
   padding : 0px 8px 0px 8px;
 }
 
-.hashtag-row1:hover, .hashtag-row2:hover, .hashtag-row3:hover, .hashtag-row4:hover, .hashtag-row5:hover{
+.hashtag-row6{
+  margin-top : 10px;
+}
+
+.hashtag-row7{
+  font-size : 12px;
+  padding : 3px 8px 3px 28px;
+  margin-top : 5px;
+}
+
+.hashtag-row1:hover, .hashtag-row2:hover, .hashtag-row3:hover, .hashtag-row4:hover, .hashtag-row5:hover, .hashtag-row6:hover, .hashtag-row7:hover{
   background-color : rgb(224, 223, 221);
   cursor : pointer;
+  color : rgb(30, 30, 30);
 }
 
 #hashC {
@@ -328,7 +348,36 @@ img[alt = "Cover Image"]{
   font-size : 12px;
 }
 
+.link1, .link2, .link3{
+  margin-top : 18px;
+}
+
+.link1:hover, .link2:hover, .link3:hover{
+  text-decoration : underline;
+  cursor : pointer;
+}
+
 .sidebar-bottom-links a{
   color : rgb(0, 128, 255);
   text-decoration : none;
+}
+
+.more{
+  border-top : 1px solid rgb(235,235,235);
+  margin-top : 10px;
+  color : rgb(102,102,102);
+  font-size : 14px;
+  display : flex;
+  flex-direction : row;
+  justify-content : center;
+  align-items : center;
+  padding : 10px 0 10px 0;
+  border-bottom-left-radius : 8px;
+  border-bottom-right-radius : 8px;
+}
+
+.more:hover{
+  background-color : rgb(224, 223, 221);
+  cursor : pointer;
+  color : rgb(30, 30, 30);
 }
