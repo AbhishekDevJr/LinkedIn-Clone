@@ -103,7 +103,7 @@ header{
   display : flex;
   flex-direction : row;
   justify-content : space-between;
-  align-items : center
+  align-items : flex-start;
 }
 
 .main-child1{
@@ -295,9 +295,6 @@ img[alt = "Cover Image"]{
   background-color : white;
   border : 1px solid #d4d4d4;
   border-radius : 10px;
-  position: sticky !important;
-  top: 20px;
-  z-index: 200;
 }
 
 .sidebar-bottom-1{
@@ -380,4 +377,51 @@ img[alt = "Cover Image"]{
   background-color : rgb(224, 223, 221);
   cursor : pointer;
   color : rgb(30, 30, 30);
+}
+
+.feed-top{
+  width : 600px;
+  background-color : white;
+  padding : 10px;
+  border-radius : 10px;
+  border : 1px solid #d4d4d4;
+}
+
+.top-row1{
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  align-items : center;
+}
+
+.top-row1 img {
+  width : auto;
+  height : 50px;
+  border-radius : 100%;
+}
+
+.top-row1 input{
+  width : 500px;
+  padding : 15px;
+  border-radius : 100px;
+  border : 1px solid #8b8b8b;
+}
+
+.top-row1 input:hover{
+  background-color : rgb(243,242,239);
+  cursor : pointer;
+}
+
+.top-row2{
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  align-items : center;
+}
+
+.row2-item1, .row2-item2, .row2-item3, .row2-item4{
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  align-items : center;
 }
