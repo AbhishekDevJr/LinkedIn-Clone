@@ -1,6 +1,18 @@
 import React from 'react';
+import FeedPost from './FeedPost';
 
 function Feed(){
+    let someContent = `Computer Science Student:
+
+    - School
+    DS&A, OOP, Computer Architecture, Linear Algebra, Java/C++/Python, Operating Systems, Calculus, Parallel Computing, Concurrency
+    
+    - Interview
+    Arrays, Strings, Graphs, Sorting, Trees, Binary Search, BFS, DFS, Dynamic Programming, Linked Lists, Stacks, Queues,
+    
+    - Work
+    Code Reviews, Angular, Scala, GoLang, Swift, RESTful Apis, CRUD Databases, SOLID Principles, Unit/Integration testing, Sprint planning, SCRUM, CI/CD, Version Control, System Design,
+    `;
     return(
         <div className = "feed">
             <div className = "feed-top">
@@ -40,6 +52,9 @@ function Feed(){
                     <p>Sort by: <strong>Top +</strong></p>
                 </button>
             </div>
+
+            {/* FeedPost Component */}
+            <FeedPost name = "Harvey Specter" title = "Attorney/Managing Partner/ Best Closer" postContent = {someContent} />
         </div>
     );
 }
