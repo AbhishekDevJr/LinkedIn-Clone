@@ -464,6 +464,7 @@ img[alt = "Cover Image"]{
 }
 
 .feedSect{
+  margin-bottom : 10px;
   padding : 10px;
   background-color : white;
   border : 1px solid #d4d4d4;
@@ -533,7 +534,7 @@ img[alt = "Cover Image"]{
 
 .post-content{
   font-size : 14px;
-  color : rgb(96, 96, 96);
+  color : rgb(29, 29, 29);
   padding : 0 10px 10px 10px;
   border-bottom : 1px solid rgb(191,190,187);
 }

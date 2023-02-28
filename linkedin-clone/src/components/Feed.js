@@ -1,7 +1,43 @@
 import React from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import FeedPost from './FeedPost';
+import { db } from './firebase';
+import firebase from './firebase/compat/app';
 
 function Feed(){
+    const [inputState, setInputState] = useState('');
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        db.collection("posts").orderBy('timestamp', 'desc').onSnapshot((snapshot) => (
+            setPosts(snapshot.docs.map(doc => (
+                {
+                    id : doc.id,
+                    data : doc.data(),
+                }
+            )))
+        ))
+    }, []);
+
+    const handleChange = (event) => {
+        setInputState(event.target.value);
+    }
+
+    function submitHandler(event){
+        event.preventDefault();
+
+        db.collection('posts').add({
+            name : 'Abhishek Choudhari',
+            title : 'This is a test Title',
+            postContent : inputState,
+            userPhotoUrl : '',
+            timestamp : firebase.firestore.FieldValue.serverTimestamp(),
+        });
+
+        setInputState('');
+    }
+
     let someContent = `Computer Science Student:
 
     - School
@@ -18,8 +54,8 @@ function Feed(){
             <div className = "feed-top">
                 <div className = "top-row1">
                     <a href = "#"><img src = "SidebarProfileImage.JPEG" alt = "Profile Picture SideBar" /></a>
-                    <form>
-                        <input type = "text" name = "post" placeholder = "Start a post" />
+                    <form onSubmit = {submitHandler}>
+                        <input value = {inputState} type = "text" name = "post" placeholder = "Start a post" onChange = {handleChange} />
                     </form>
                 </div>
 
@@ -54,7 +90,24 @@ function Feed(){
             </div>
 
             {/* FeedPost Component */}
-            <FeedPost name = "Harvey Specter" title = "Attorney/Managing Partner/ Best Closer" postContent = {someContent} />
+
+            {posts.map(({ id, data:{ name, title, postContent, userPhotoUrl } }) => {
+                return(
+                    <FeedPost
+                    key = {id}
+                    name = {name}
+                    title = {title}
+                    postContent = {postContent}
+                    userPhotoUrl = {userPhotoUrl} 
+                />
+                ); 
+            })}
+
+            {/* <FeedPost 
+            name = "Harvey Specter" 
+            title = "Attorney/Managing Partner/ Best Closer" 
+            postContent = {someContent} 
+            /> */}
         </div>
     );
 }
